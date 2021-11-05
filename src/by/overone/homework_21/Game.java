@@ -32,8 +32,10 @@ public class Game {
 
     static boolean isCellValid(int x, int y){
         if (x < 0 || y < 0 || x >= fieldSize || y >= fieldSize){
+            System.out.println("You entered the wrong number");
             return false;
         }else if (! (FIELD[x][y] == EMPTY_FIELD)){
+            System.out.println("This field is occupied");
             return false ;
         }
         return true;
