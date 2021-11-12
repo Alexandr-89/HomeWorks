@@ -10,12 +10,14 @@ public class Main {
             System.out.println("Your date of birth");
             System.out.println("Enter month your of birth");
             Scanner scanner = new Scanner(System.in);
-            if (scanner.hasNextLine()){
+            if (scanner.hasNextLine()) {
                 String mounth = scanner.nextLine();
                 System.out.println("Enter number your of birth");
-            }
-            if (scanner.hasNextInt()){
-                int number = scanner.nextInt();
+
+                if (scanner.hasNextInt()) {
+                    int number = scanner.nextInt();
+                    Month.zodiacSign(mounth, number);
+                }
             }
         }
     }
