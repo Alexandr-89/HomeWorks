@@ -33,7 +33,7 @@ public enum Month {
                     }else if (number>= 21 && number<= 31) {
                         System.out.println("Your zodiac sing - AQUARIUS ");
                     }else {
-                        System.out.println("Invalid number");
+                        System.out.println("Invalid number, enter correct number");
                     }
                     break;
                 case FEBRUARY:
