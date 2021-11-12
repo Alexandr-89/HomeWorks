@@ -135,6 +135,8 @@ public enum Month {
                         System.out.println("Invalid number, enter correct number");
                     }
                     break;
+                default:
+                    System.out.println("Error");
             }
         }catch (IllegalArgumentException e){
             System.out.println("There is no such month");
