@@ -30,8 +30,10 @@ public enum Month {
                 case JANYARY:
                     if (number>=0 && number<=20){
                         System.out.println("Your zodiac sing - CAPRICORN");
-                    }else if (number>= 21 && number<= 31){
+                    }else if (number>= 21 && number<= 31) {
                         System.out.println("Your zodiac sing - AQUARIUS ");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case FEBRUARY:
@@ -39,6 +41,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - AQUARIUS");
                     }else if (number>= 20 && number<= 29){
                         System.out.println("Your zodiac sing - PISCES");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case MARCH:
@@ -46,6 +50,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - PISCES");
                     }else if (number>= 21 && number<= 31){
                         System.out.println("Your zodiac sing - ARIES");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case APRIL:
@@ -53,6 +59,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - ARIES");
                     }else if (number>= 21 && number<= 30){
                         System.out.println("Your zodiac sing - TAURUS");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case MAY:
@@ -60,6 +68,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - TAURUS");
                     }else if (number>= 22 && number<= 31){
                         System.out.println("Your zodiac sing - GEMINI");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case JUNE:
@@ -67,6 +77,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - GEMINI");
                     }else if (number>= 22 && number<= 30){
                         System.out.println("Your zodiac sing - CANCER");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case JULY:
@@ -74,6 +86,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - CANCER");
                     }else if (number>= 23 && number<= 31){
                         System.out.println("Your zodiac sing - LEO");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case AUGUST:
@@ -81,6 +95,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - LEO");
                     }else if (number>= 23 && number<= 31){
                         System.out.println("Your zodiac sing - VIRGO");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case SEPTEMBER:
@@ -88,6 +104,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - VIRGO");
                     }else if (number>= 24 && number<= 30){
                         System.out.println("Your zodiac sing - LIBRA");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case OCTOBER:
@@ -95,6 +113,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - LIBRA");
                     }else if (number>= 24 && number<= 31){
                         System.out.println("Your zodiac sing - SCORPIO");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case NOVEMBER:
@@ -102,6 +122,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - SCORPIO");
                     }else if (number>= 23 && number<= 30){
                         System.out.println("Your zodiac sing - SAGITTARIUS");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
                 case DESEMBER:
@@ -109,6 +131,8 @@ public enum Month {
                         System.out.println("Your zodiac sing - SAGITTARIUS");
                     }else if (number>= 22 && number<= 31){
                         System.out.println("Your zodiac sing - CAPRICORN");
+                    }else {
+                        System.out.println("Invalid number");
                     }
                     break;
             }
