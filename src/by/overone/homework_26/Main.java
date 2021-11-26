@@ -108,5 +108,32 @@ public class Main {
         list.add("aderaa");
 
         list.stream().filter(q->q.startsWith("aa")).map(q->q+", ").forEach(System.out::print);
+
+        System.out.println();
+
+        Tester tester1 = new Tester(1, "bbbbb");
+        Tester tester2 = new Tester(2, "asdf");
+        Tester tester3 = new Tester(3, "bb");
+        Tester tester4 = new Tester(4, "babbb");
+        Tester tester5 = new Tester(5, "bbbdfrb");
+        Tester tester6 = new Tester(6, "bbbbb");
+
+        List<Tester> list1 = new ArrayList<>();
+        list1.add(tester1);
+        list1.add(tester2);
+        list1.add(tester3);
+        list1.add(tester4);
+        list1.add(tester5);
+        list1.add(tester6);
+
+        list1.stream().filter(q->q.getId()>3).forEach(q->System.out.println(q.getId()));
+        System.out.println();
+        list1.stream().filter(q->q.getName().startsWith("bb"))
+                .forEach(q->System.out.println(q.getName()+"-"+q.getId()));
+        System.out.println();
+        list1.stream().forEach(q->System.out.println(q.getName()));
+        list1.stream().filter(q->q.getId()>3)
+                .filter(q->q.getName().startsWith("bb"))
+                .forEach(q->System.out.println(q.getName()+"-"+q.getId()));
     }
 }
