@@ -78,5 +78,16 @@ public class Main {
         };
 
         System.out.println(many.convertion("155.0 USD"));
+
+        System.out.println();
+
+        Consumer<String> consumer = q->{
+            double coefficient = 2.45;
+            String [] arr = q.split(" ");
+            double z = Double.parseDouble(arr[0])/coefficient;
+            System.out.println(z);
+        };
+
+        consumer.conversion("396.0 USD");
     }
 }
