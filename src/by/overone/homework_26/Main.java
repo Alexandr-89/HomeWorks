@@ -67,5 +67,16 @@ public class Main {
         };
 
         unaryOperator.aaaaaaa("2, 3, 4, 5, 6");
+
+        System.out.println();
+
+        Function many = q->{
+            double coefficient = 2.45;
+            String [] arr = q.split(" ");
+            double z = Double.parseDouble(arr[0])/coefficient;
+            return z;
+        };
+
+        System.out.println(many.convertion("155.0 USD"));
     }
 }
