@@ -1,6 +1,8 @@
 package by.overone.homework_26;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -89,5 +91,22 @@ public class Main {
         };
 
         consumer.conversion("396.0 USD");
+
+        System.out.println();
+
+        List<String> list = new ArrayList<>();
+
+        list.add("ssss");
+        list.add("aaaaaa");
+        list.add("ccccc");
+        list.add("eeeee");
+        list.add("asdfg");
+        list.add("a");
+        list.add("aa");
+        list.add("jhkykg");
+        list.add("mbkk");
+        list.add("aderaa");
+
+        list.stream().filter(q->q.startsWith("aa")).map(q->q+", ").forEach(System.out::print);
     }
 }
