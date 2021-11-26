@@ -51,5 +51,21 @@ public class Main {
         };
 
         binaryOperator.aaaa("123456", "123456");
+
+        System.out.println();
+
+        UnaryOperator<String> unaryOperator = q -> {
+            String[] arr = q.split(", ");
+            Integer[] arr1 = new Integer[arr.length];
+            for (int i =0; i<arr.length; i++){
+                arr1[i] = Integer.parseInt(arr[i]);
+                arr1[i] = arr1[i]*arr1[i];
+            }
+            String sss = Arrays.toString(arr1);
+            System.out.println(sss);
+            return sss;
+        };
+
+        unaryOperator.aaaaaaa("2, 3, 4, 5, 6");
     }
 }
